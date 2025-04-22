@@ -1,0 +1,126 @@
+@keyframes rotateEye {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+@keyframes eyeMoving {
+  0% {
+    transition: none;
+  }
+  25% {
+    mask: none;
+    scale: 0.8;
+  }
+
+  100% {
+    mask: linear-gradient(#0000 0, transparent 0) content-box intersect,
+      conic-gradient(#000 180deg, #0000 0);
+  }
+}
+
+@keyframes flashingLights {
+  0% {
+    box-shadow: 0px 60px 30px red;
+    border-bottom-color: red;
+  }
+
+  33% {
+    box-shadow: 0px 85px 30px rgb(61, 229, 61);
+    border-bottom-color: rgb(61, 229, 61);
+  }
+
+  67% {
+    box-shadow: 0px 60px 30px rgb(41, 41, 152);
+    border-bottom-color: rgb(41, 41, 152);
+  }
+
+  100% {
+    box-shadow: 0px 85px 30px silver;
+    border-bottom-color: silver;
+  }
+}
+
+@keyframes expandingNose {
+  from {
+    transform: scale(1.5);
+  }
+
+  to {
+    transform: scale(1);
+  }
+}
+
+@keyframes robot-ear-left {
+  from {
+    transform: translateX(0px);
+  }
+  to {
+    transform: translateX(-30px) scale(1.25);
+    background-color: gold;
+  }
+}
+
+@keyframes robot-ear-right {
+  from {
+    transform: translateX(0px);
+  }
+  to {
+    transform: translateX(30px) scale(1.25);
+    background-color: gold;
+  }
+}
+
+@keyframes antannae {
+  0% {
+    transform: none;
+  }
+  25% {
+    transform: scaleY(1.75);
+    border-bottom-color: yellowgreen;
+  }
+  50% {
+    transform: none;
+    border-bottom-color: black;
+  }
+  75% {
+    transform: scaleY(1.75);
+    border-bottom-color: purple;
+  }
+  100% {
+    transform: none;
+    border-bottom-color: black;
+  }
+}
+
+@keyframes mouthChange {
+  0% {
+    transform: none;
+  }
+
+  25% {
+    border-radius: 50%;
+    width: 200px;
+  }
+
+  100% {
+    border-radius: 10% 10% 64% 64%;
+  }
+}
+
+@keyframes phasing {
+  0% {
+    transform: none;
+  }
+
+  25% {
+    opacity: 0;
+  }
+
+  100% {
+    opacity: 1;
+  }
+}
